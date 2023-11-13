@@ -1,0 +1,587 @@
+
+
+
+
+
+
+
+
+
+
+body {
+
+    background-color: #272729;
+    font-family: "Lexend Exa", sans-serif;
+  }
+  
+  nav {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    border: 2px solid #EBECF1;
+    border-radius: 30px;
+    animation: slide-in 1s ease-out;
+  }
+  
+  ul {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0 30px;
+    list-style-type: none;
+  }
+  ul li:not(:last-child) {
+    margin-right: 40px;
+  }
+  ul li {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background 0.2s;
+  }
+  ul li a {
+    color: #fcfcfc;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+ul li ul li {
+  margin: -2px 0 0 -2px;
+  width: calc(100% - 20px);
+  line-height: 1.7;
+}
+ul li ul li a {
+  color: #faf9f9;
+}
+ul li:hover {
+  background: #0a0a0a;
+  border: 2px solid #ffffff;
+  border-right: 2px solid #080808;
+  border-bottom: 2px solid #ffffff;
+}
+ul li:hover a {
+  color: #F9F8FD;
+}
+ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 0px 3px 5px 2px #EBECF1;
+}
+ul li:hover ul li a {
+  color: #F9F8FD;
+}
+
+@keyframes slide-in {
+  0% {
+    top: -50px;
+  }
+  40% {
+    top: 20px;
+  }
+  70% {
+    top: 10px;
+  }
+  100% {
+    top: 15px;
+  }
+}
+.text1{
+    
+    position: absolute;
+    top: 68px;
+    left:-60px;
+    
+    }
+    .text2{
+    
+        position: absolute;
+        font-family: 'VT323';
+        top:160px;
+        left:80px;
+        font-size: 40px;
+        color: rgb(33, 170, 106);
+        }
+        .text3{
+    font-size: 45px;
+            position: absolute;
+            top: 190px;
+            left:70px;
+            color: #f5f2f2;
+            }
+            .text4{
+                position: absolute;
+                font-family: 'VT323';
+                top:410px;
+                left:90px;
+                font-size: 30px;
+                color:  rgb(33, 170, 106);
+                }
+                .text5{
+    
+                    position: absolute;
+                    top:-25px;
+                    left:50px;
+                    
+                    }
+                    .text6{
+    
+                        position: absolute;
+                        top:600px;
+                        left:-550px;
+                        
+                        }
+    .text7{
+    font-size:40px;
+    position: absolute;
+    font-family: "Press Start 2P";
+    top:610px;
+left:560px;
+color:  rgb(33, 170, 106);
+}
+.text8{
+    font-size:20px;
+    position: absolute;
+    top:660px;
+left:40px;
+
+}
+.text9{
+    position: absolute;
+    top:1050px;
+left:150px;}
+.text10{
+    display: inline-block; 
+    overflow: hidden; /* Скрываем всё за контуром */
+    position: relative;
+  font-size: 3px;
+  left:-70px;
+  top:1100px }
+  .text10 img {
+    transition: 1s; /* Время эффекта */
+    display: block; 
+  }
+  .text10 img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+  }
+  .text11{
+    position: absolute;
+    top: 50px;
+left:150px;}
+
+.nn{
+        display: inline-block;
+        padding: 30px 15px;
+        background-color: rgb(33, 170, 106);;
+        position: absolute;
+        top: 1280px;
+        left:940px;
+        color: #050303;
+        text-decoration: none;
+        border-radius:10px;
+        font-size: 20px;
+        transition: background-color 0.3s ease;}
+    .nn:hover {
+    background-color:#f8f3c6;
+    }
+ 
+.text13{
+    position: absolute;
+    font-family: "Press Start 2P";
+    color: #000;
+    font-size: 70px;
+    top:950px;
+left:500px;}
+
+@keyframes slideShow{
+  0%{
+    width: 100%;
+    left: 100%;}
+  5%{
+    left: 0;}
+  25%{
+    left: 0;}
+  30%{
+    width: 100%;
+    left: -100%;}
+  30.001%{
+    width: 0;
+    left: -100%;}
+  100%{
+    width: 0;
+    left: 100%;}
+  }
+.slider{
+  width: 50%;
+  color:  rgb(33, 170, 106);
+  height: 70vh;
+  position: relative;
+top: 1100px;
+left: 600px;
+  overflow: hidden;}
+  
+.slide{
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  overflow: hidden;
+  animation: slideShow 14s infinite;
+  background-position: center;
+  background-size: cover;
+  background-color: #000;
+  color:  rgb(33, 170, 106);
+  font-family: "Press Start 2P";
+  font-size: 30px;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide:nth-child(1){
+  left: 0;
+  animation-delay: 11s;
+  background-image: url("Игр\ верс.JPEG");
+}
+.slide:nth-child(2){
+  left: 0;
+  animation-delay: 8s;
+  background-image: url("Sobstab.png");
+}
+.slide:nth-child(3){
+  left: 0;
+  animation-delay: 5s;
+  background-image: url("Профиль\ польз.JPEG");
+}  
+.slide:nth-child(4){
+  left: 0;
+  animation-delay: 2s;
+  background-image: url("reiigr.JPEG");
+}
+.text15{
+    position: absolute;
+    top:1050px;
+left: 720px;;}
+.text17{
+  position: relative;
+  top:200px;
+  left:-370px;
+  }
+
+
+.arrow-7 {
+  margin: 30px;
+  position: relative;
+  top: 1000px;
+  left: 980px;
+}
+.arrow-7 span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #080808;
+  border-right: 5px solid #050505;
+  transform: rotate(45deg);
+  margin: -16px;
+  animation: arrow-7 2s infinite;
+}
+.arrow-7 span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.arrow-7 span:nth-child(3){
+  animation-delay: -0.4s;
+}
+@keyframes arrow-7 {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}
+
+
+.arrow-8 {
+  margin: 30px;
+  transform: rotate(270deg);
+  position: relative;
+  top: 200px;
+  left: 450px;
+}
+.arrow-8 span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 5px solid #080808;
+  border-right: 5px solid #050505;
+  transform: rotate(45deg);
+  margin: -16px;
+  animation: arrow-7 2s infinite;
+}
+.arrow-8 span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.arrow-8 span:nth-child(3){
+  animation-delay: -0.4s;
+}
+@keyframes arrow-8 {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}
+
+
+.arrow-9 {
+  margin: 30px;
+  transform: rotate(90deg);
+  position: relative;
+  top:1421px;
+  left: 240px;
+}
+.arrow-9 span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 5px solid #080808;
+  border-right: 5px solid #050505;
+  transform: rotate(45deg);
+  margin: -16px;
+  animation: arrow-7 2s infinite;
+}
+.arrow-9 span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.arrow-9 span:nth-child(3){
+  animation-delay: -0.4s;
+}
+@keyframes arrow-9 {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}
+.arrow-10 {
+  margin: 30px;
+  position: relative;
+  transform: rotate(180deg);
+  top:630px;
+  left:-285px;
+}
+.arrow-10 span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #080808;
+  border-right: 5px solid #050505;
+  transform: rotate(45deg);
+  margin: -16px;
+  animation: arrow-7 2s infinite;
+}
+.arrow-10 span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.arrow-10 span:nth-child(3){
+  animation-delay: -0.4s;
+}
+@keyframes arrow-7 {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}
+.text18{
+  position: absolute;
+  top:750px;
+left:-440px;
+}
+.text19{
+  position: absolute;
+  font-size: 90px;
+  top:750px;
+left:-440px;
+}
+.text20{
+  position: absolute;
+  font-size: 70px;
+  top:900px;
+left:-400px;
+}
+.text21{
+  position: absolute;
+  font-size: 70px;
+  color: rgb(33, 170, 106);
+  top:1050px;
+left:-420px;
+}
+.text22{
+  position: absolute;
+  top:2300px;
+left:-2500px;
+}
+.text23{
+  position: absolute;
+  top:2550px;
+left:550px;
+}
+
+.text25{
+  display: inline-block; 
+  overflow: hidden; /* Скрываем всё за контуром */
+  position: absolute;
+left:140px;
+top: 2700px;}
+.text25 img {
+  transition: 1s; /* Время эффекта */
+  display: block; 
+}
+.text25 img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.text24{
+  display: inline-block; 
+  overflow: hidden; /* Скрываем всё за контуром */
+  position: absolute;
+left:810px;
+top: 2690px;}
+.text24 img {
+  transition: 1s; /* Время эффекта */
+  display: block; 
+}
+.text24 img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.text23{
+  display: inline-block; 
+  overflow: hidden; /* Скрываем всё за контуром */
+  position: absolute;
+left:550px;
+top: 2550px;}
+.text23 img {
+  transition: 1s; /* Время эффекта */
+  display: block; 
+}
+.text23 img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+.text26{
+  position: absolute;
+  text-decoration: underline rgb(33, 170, 106);
+  font-size:50px ;
+  font-family:"Press Start 2P" ;
+  top:2310px;
+left:500px;
+}
+.text27{
+  position: absolute;
+  text-decoration: underline dashed  rgb(33, 170, 106) ;
+  font-size:20px ;
+  top:2400px;
+left:80px;
+}
+.text28{
+  position: absolute;
+  text-decoration: underline #000 ;
+  font-size:40px ;
+  top:3010px;
+left:80px;
+}
+
+.text29{
+  position: absolute;
+  top:2800px;
+left:-350px;
+}
+.text38{
+  position: absolute;
+  font-size: 20px;
+  color: #4c4c4e;
+  top:3450px;
+left:50px;
+}
+.text31{
+  position: absolute;
+  font-size: 30px;
+  text-decoration: overline ;
+  top:3030px;
+left:900px;
+}
+
+.text32{
+  position: absolute;
+  font-size:15px;
+  top:3070px;
+left:80px;
+}
+.text33{
+  position: absolute;
+  font-size:20px;
+  top:3170px;
+left:80px;
+}
+.text34{
+  position: absolute;
+  top:3090px;
+left:15px;
+}
+.text35{
+  position: absolute;
+  top:3010px;
+left:790px;
+}
+
+.text36{
+  position: absolute;
+  font-size: 20px;
+  text-decoration: underline ;
+  top:3100px;
+left:920px;
+}
+
+
+
+
+@media (max-width:1000px){
+  .title{
+    font-size: 50px;
+    width: auto;
+  }
+}
+  @media (max-width:830px){
+    .nav{
+display: block;
+text-align: center;
+    }
+    .nav-item{
+      display: block;
+      margin-right: 0%;
+    }
+  }
